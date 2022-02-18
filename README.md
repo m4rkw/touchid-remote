@@ -1,7 +1,7 @@
 # TouchID Remote - use touchID over SSH!
 
 This project builds on the awesome [touch2sudo](https://github.com/prbinu/touch2sudo) and allows it to be used with
-remote ssh connections.
+remote ssh connections. This means you can use the touchID sensor on your Mac to authenticate sudo when connected to remote machines over ssh.
 
 
 ## Overview
@@ -13,7 +13,7 @@ There are two components:
 2) A python authentication daemon which runs locally and invokes touch2sudo
 ([server.py](https://github.com/m4rkw/touchid-remote/blob/master/server.py))
 
-The basic process is thus:
+The basic process is:
 
 1) When the user connects to the remote machine via ssh, a tunnel is created
 back to the authentication server on the client machine.
