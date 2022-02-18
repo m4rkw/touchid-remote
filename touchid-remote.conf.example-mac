@@ -1,0 +1,4 @@
+server_port: 61111
+key1: "key1"
+key2: "key2"
+touch2sudo_path: /usr/local/bin/touch2sudo
