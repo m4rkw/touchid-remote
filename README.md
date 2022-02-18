@@ -28,8 +28,8 @@ the authentication server.
 
 3) The authentication server on the client machine validates the shared secret,
 if it's invalid then it returns '0' and the PAM module returns an error status
-which then causes PAM to defer to the next authentication mechanism which would
-be a password prompt by default.
+which then causes PAM to defer to the next authentication mechanism (which would
+typically be a password prompt).
 
 4) If the shared secret is correct the authentication server invokes touch2sudo
 which prompts the user to authenticate with TouchID. If this is successful this
