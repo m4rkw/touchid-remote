@@ -93,10 +93,10 @@ Replace "key1" with your configured secret for key1. When you execute this
 command you should see a touch2sudo prompt, if this is successfully validated
 the output of the curl command will be the value of key2.
 
-7) Add this line to the top of /etc/pam.d/sudo (but after the #%PAM-1.0
-bangline):
+7) Add this auth line to the top of your /etc/pam.d/sudo on the remote machine(s):
 
 ````
+#%PAM-1.0
 auth sufficient /usr/lib64/security/pam_tid.so
 ````
 
