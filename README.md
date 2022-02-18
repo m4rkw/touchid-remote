@@ -116,19 +116,12 @@ a connection entry in ~/.ssh/config might look like:
 ````
 Host server1
   Hostname server1.mydomain.com
-  SendEnv USE_TOUCHID
+  SetEnv USE_TOUCHID 1
   RemoteForward localhost:61111 localhost:61111
 ````
 
 This ensures that whenever you connect to this server with ssh it will attempt
 to initiate a tunnel back to the authentication server on the mac client.
-
-Also make sure USE\_TOUCHID is set to "1" in your .bashrc:
-
-````
-$ echo 'export USE_TOUCHID=1' >> ~/.bashrc
-$ source ~/.bashrc
-````
 
 Now ssh to the server using this new connection profile, eg:
 
