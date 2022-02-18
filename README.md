@@ -56,6 +56,9 @@ $ make
 $ sudo make install
 ````
 
+Note: this must be installed as the user you normally use the mac with, not as
+root.
+
 2) Grab touch2sudo from: https://github.com/prbinu/touch2sudo/releases and
 install it somewhere in your PATH, eg /usr/local/bin/touch2sudo
 
