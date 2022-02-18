@@ -8,10 +8,10 @@ remote ssh connections.
 
 There are two components:
 
-1) A PAM module which must be installed on the remote server (pam\_tid.so)
+1) A PAM module which must be installed on the remote server ([pam\_tid.so](https://github.com/m4rkw/touchid-remote/blob/master/pam_tid.c))
 
 2) A python authentication daemon which runs locally and invokes touch2sudo
-(server.py)
+([server.py](https://github.com/m4rkw/touchid-remote/blob/master/server.py))
 
 The basic process is thus:
 
