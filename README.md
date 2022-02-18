@@ -120,8 +120,9 @@ Host server1
   RemoteForward localhost:61111 localhost:61111
 ````
 
-This ensures that whenever you connect to this server with ssh it will attempt
-to initiate a tunnel back to the authentication server on the mac client.
+The RemoteForward entry ensures that whenever you connect to this server with
+ssh it will attempt to initiate a tunnel back to the authentication server on
+the mac client.
 
 Also make sure you have USE\_TOUCHID set to 1:
 
