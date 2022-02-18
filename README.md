@@ -89,9 +89,9 @@ when the system restarts.
 $ curl http://localhost:61111 -H "Auth: key1"
 ````
 
-Replace "key1" with configured secret for key1. When you execute this command
-you should see a touch2sudo prompt, if this is successfully validated the output
-of the curl command will be the value of key2.
+Replace "key1" with your configured secret for key1. When you execute this
+command you should see a touch2sudo prompt, if this is successfully validated
+the output of the curl command will be the value of key2.
 
 7) Add this line to the top of /etc/pam.d/sudo (but after the #%PAM-1.0
 bangline):
