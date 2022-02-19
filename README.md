@@ -4,6 +4,11 @@ This project builds on the awesome [touch2sudo](https://github.com/prbinu/touch2
 remote ssh connections without using SSH agent forwarding which can introduce security vulnerabilities.
 
 
+## Note
+
+After compiling this I discovered a [simpler way](https://m4.rkw.io/blog/touchid-over-ssh-part-2-secretive-agent.html) to do it that might work
+better for some people.
+
 ## Overview
 
 There are two components:
